@@ -7,59 +7,262 @@ layout: home
   <title>Home</title>
 </head>
 
+<style>
+  :root {
+    --content-max-width: 1600px;
+    --banner-padding-x: 20px;
+  }
+  .top-container {
+    background-image: url("../src/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+  titlebar, topnav {
+    background-color: transparent;
+  }
+  div.banner.img {
+    padding-top: 150px;
+    padding-bottom: 250px;
+    text-align: center;
+  }
+  div.banner#time-banner {
+    background-color: #212121;
+  }
+  carousel#main {
+    background: linear-gradient(180deg, rgba(2,11,11,1) 0%, rgba(8,34,70,1) 51%, rgba(19,72,133,1) 82%);
+    background: #212121;
+  }
+  carousel {
+    background: #212121;
+  }
+  .container {
+    max-width: var(--content-max-width);
+  }
+  @media (max-width: 600px) {
+    div.banner.img {
+      padding-top: 30px;
+      padding-bottom: 140px;
+    }
+    :root {
+      --banner-padding-x: 6px;
+    }
+  }
+
+
+
+  #main-nav, titlebar {
+    display: inline-flex;
+  }
+  .nav-shadow {
+    background-color: #111;
+  }
+  #main-nav {
+    float: right;
+  }
+  topnav li a {
+    padding: 19px 15.3px;
+  }
+  .dropdown-content {
+    background-color: #242424;
+  }
+  .dropdown-content a {
+    color: #dedede;
+  }
+  .dropdown-content a:hover {
+    background-color: #363636;
+  }
+  #dropdownarrow {
+    padding: 16px 12px;
+  }
+  @media (max-width: 1310px) and (min-width: 600px) {
+    topnav li a {
+      padding: 19px 12px;
+    }
+    @media (max-width: 1240px) {
+      #pinestraw {
+        display: none;
+      }
+      #dropdownarrow, #drop-pinestraw {
+        display: block;
+      }
+      @media (max-width: 1170px) {
+        #payments {
+          display: none;
+        }
+        #drop-payments {
+          display: block;
+        }
+        @media (max-width: 1060px) {
+          #contact {
+            display: none;
+          }
+          #drop-contact {
+            display: block;
+          }
+          #members .dropdown-content{
+            right: 0;
+          }
+          @media (max-width: 960px) {
+            #photos {
+              display: none;
+            }
+            #drop-photos {
+              display: block;
+            }
+            #tevents .dropdown-content{
+              right: 0;
+            }
+            @media (max-width: 870px) {
+              topnav li a {
+                padding: 19px 7px;
+              }
+              @media (max-width: 810px) {
+                #members {
+                  display: none;
+                }
+                #drop-members {
+                  display: block;
+                }
+                #drop-contact {
+                  width: 260px;
+                }
+                #scouts .dropdown-content{
+                  right: 0;
+                }
+                @media (max-width: 720px) {
+                  #tevents {
+                    display: none;
+                  }
+                  #drop-tevents {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+  .main-carousel {
+    margin: 0 var(--banner-padding-x);
+    margin-top: -80px;
+    height: 300px;
+  }
+  .main-carousel .carousel-cell {
+    width: 33%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+  }
+  @media (max-width: 1400px) {
+    .main-carousel .carousel-cell {
+      width: 50%;
+      height: 300px;
+    }
+  }
+  @media (max-width: 900px) {
+    .main-carousel .carousel-cell {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  @media (max-width: 500px) {
+    .main-carousel .carousel-cell {
+      width: 86%;
+      height: 200px;
+    }
+    .main-carousel {
+      height: 200px;
+    }
+    .main-carousel .carousel-title {
+      font-size: 28px;
+    }
+  }
+  .main-carousel .carousel-text-card {
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+  }
+</style>
+
 <body>
-  <carousel>
-    <div class="container">
-      <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 4000 }'>
-        <div class="carousel-cell ripple-dark-bg ripple-mobile" id="card6">
-          <div class="carousel-text-card">
-            <div>
-              <h2 class="carousel-title">Merit Badge Clinic</h2>
-              <p class="carousel-info">February 9; 8:30 AM - 3:00 PM</p>
-              <a href="https://www.eventbrite.com/e/boy-scout-troop-370-merit-badge-clinic-feb-2019-tickets-53531615503" class="mdc-button standard-light-button mdc-button--outlined">Sign Up</a>
-            </div>
-          </div>
+  <div class="top-container">
+    <div class="banner transparent img">
+      <div class="container">
+        <h3 class="size8">Welcome to Troop 370</h3>
+        <p>Troop 370 is proud to have completed over 40 years of consecutive service to the Buckhead\Brookhaven community. Sponsored by St. James United Methodist Church, Troop 370 has a long history of developing boys into young men following the aims and ideals of the Boy Scouts of America movement.</p>
+        <div class="buttonrow">
+          <a href="about.html" class="mdc-button standard-light-button mdc-button--outlined">About page</a>
         </div>
-        <div class="carousel-cell ripple-dark-bg ripple-mobile" id="card4">
-          <div class="carousel-text-card">
-            <div>
-              <h2 class="carousel-title">Woodruff Summer Camp</h2>
-              <p class="carousel-info">June 9-15</p>
-              <a href="woodruff-sc-sign-up_encrypted.html" class="mdc-button standard-light-button mdc-button--outlined">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell ripple-dark-bg ripple-mobile" id="card5">
-          <div class="carousel-text-card">
-            <div>
-              <h2 class="carousel-title">Summit Summer Camp</h2>
-              <p class="carousel-info">June 23-29</p>
-              <a href="summit-sc-sign-up_encrypted.html" class="mdc-button standard-light-button mdc-button--outlined">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell ripple-dark-bg ripple-mobile" id="card1">
-          <div class="carousel-text-card">
-            <div>
-              <h2 class="carousel-title">High Adventure</h2>
-              <p class="carousel-info">2019</p>
-              <a href="camps-adventure.html#tevents" class="mdc-button standard-light-button mdc-button--outlined">View list</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </carousel>
-  <div class="banner extra-padding-y">
-    <div class="container">
-      <h3 class="size8">Welcome to Troop 370</h3>
-      <p>Boy Scout Troop 370 is proud to have completed over 40 years of consecutive service to the Buckhead\Brookhaven community. Sponsored by St. James United Methodist Church, Troop 370 has a long history of developing boys into young men following the aims and ideals of the Boy Scouts of America movement.</p>
-      <div class="buttonrow">
-        <a href="about.html" class="mdc-button standard-light-button mdc-button--outlined">About page</a>
       </div>
     </div>
   </div>
-  <carousel>
+
+
+
+    <carousel id="main">
+      <div class="container">
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 4000, "pageDots": false }'>
+          <div class="carousel-cell ripple-dark-bg ripple-mobile" id="card6">
+            <div class="carousel-text-card">
+              <div>
+                <h2 class="carousel-title">Merit Badge Clinic</h2>
+                <p class="carousel-info">February 9; 8:30 AM - 3:00 PM</p>
+                <a href="https://www.eventbrite.com/e/boy-scout-troop-370-merit-badge-clinic-feb-2019-tickets-53531615503" class="mdc-button standard-light-button mdc-button--outlined">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell ripple-dark-bg ripple-mobile" id="card4">
+            <div class="carousel-text-card">
+              <div>
+                <h2 class="carousel-title">Woodruff Summer Camp</h2>
+                <p class="carousel-info">June 9-15</p>
+                <a href="woodruff-sc-sign-up_encrypted.html" class="mdc-button standard-light-button mdc-button--outlined">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell ripple-dark-bg ripple-mobile" id="card5">
+            <div class="carousel-text-card">
+              <div>
+                <h2 class="carousel-title">Summit Summer Camp</h2>
+                <p class="carousel-info">June 23-29</p>
+                <a href="summit-sc-sign-up_encrypted.html" class="mdc-button standard-light-button mdc-button--outlined">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell ripple-dark-bg ripple-mobile" id="card1">
+            <div class="carousel-text-card">
+              <div>
+                <h2 class="carousel-title">High Adventure</h2>
+                <p class="carousel-info">2019</p>
+                <a href="camps-adventure.html#tevents" class="mdc-button standard-light-button mdc-button--outlined">View list</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </carousel>
+
+  <div class="banner extra-padding-y" id="time-banner">
+    <div class="container">
+      <h3 class="size8">Weekly Meetings</h3>
+      <p>Wednesday Nights<br>7:30 PM - 9:00 PM<br>4400 Peachtree Dunwoody Rd, Atlanta, GA 30342<br>Activities Building (Loridans Drive Entrance)</p>
+    </div>
+  </div>
+
+  <carousel id="img">
     <div class="container">
       <div class="img-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 4000 }'>
         <div class="carousel-cell ripple-dark-bg ripple-mobile" id="imgcard1"></div>
@@ -97,12 +300,12 @@ layout: home
       </div>
     </div>
   </carousel>
-  <div class="banner extra-padding-y red" id="time-banner">
-    <div class="container">
-      <img id="meeting-icon" alt="meeting-icon" src="src/icons/meeting icon.png">
-      <h3 class="size8">Weekly Meetings</h3>
-      <p>Wednesday Nights<br>7:30 PM - 9:00 PM<br>4400 Peachtree Dunwoody Rd, Atlanta, GA 30342<br>Activities Building (Loridans Drive Entrance)</p>
+  <div class="content-strip blue">
+    <div class="container" style="text-align:left">
+      <p>© 2019 Troop 370</p>
+      <p>Contact Webmaster for passwords</p>
     </div>
   </div>
+
 </body>
 </html>

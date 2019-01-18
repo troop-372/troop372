@@ -110,7 +110,7 @@ topnav li.dropdown {
 .dropdownarrow-content {
    right: 0;
 }
-#dropdownarrow, #drop-photos, #drop-contact, #drop-payments, #drop-pinestraw, #drop-members {
+#dropdownarrow, #drop-photos, #drop-contact, #drop-payments, #drop-pinestraw, #drop-members, #drop-tevents {
   display: none;
 }
 @media (max-width: 1120px) and (min-width: 600px) {
