@@ -1,13 +1,13 @@
 {
-  "name": "Troop 370 Atlanta",
-  "short_name": "Troop 370",
+  "name": "Troop 372 Atlanta",
+  "short_name": "Troop 372",
   "theme_color": "#003f87",
   "background_color": "#003f87",
   "display": "standalone",
   "scope": "/",
   "start_url": "./index.html?utm_source=homescreen",
   "icons": [{
-    "src": "./src/troop370-logo/bugle-logo-512x512.png",
+    "src": "./src/troop372-logo/bugle-logo-512x512.png",
     "sizes": "512x512",
     "type": "image/png"
   }]

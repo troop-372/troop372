@@ -1,5 +1,5 @@
 {
-  "name": "troop370website",
+  "name": "troop372website",
   "version": "1.0.0",
   "description": "",
   "main": "service-worker.js",
@@ -33,12 +33,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/troop-370/troop370.git"
+    "url": "git+https://github.com/troop-372/troop372.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/troop-370/troop370/issues"
+    "url": "https://github.com/troop-372/troop372/issues"
   },
-  "homepage": "https://github.com/troop-370/troop370#readme"
+  "homepage": "https://github.com/troop-372/troop372#readme"
 }

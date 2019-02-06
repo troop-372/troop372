@@ -1,4 +1,4 @@
-var APP_PREFIX = 'troop370_'
+var APP_PREFIX = 'troop372_'
 var VERSION = 'version_53' // update the version every time the website is updated (or the content will not update on PWAs)
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [
@@ -38,12 +38,12 @@ var URLS = [
   './scripts/insert-header-footer.js',
   './src/fonts/IBM_Plex_Sans_Bold.woff',
   './src/icons/meeting icon.png',
-  './src/troop370-logo/bugle-logo-512x512.png',
-  './src/troop370-logo/favicon.ico',
+  './src/troop372-logo/bugle-logo-512x512.png',
+  './src/troop372-logo/favicon.ico',
   './styles/components.css',
   './styles/legacy_components.css',
   './styles/page-specific.css',
-  './styles/troop370-topnav.css',
+  './styles/troop372-topnav.css',
   './styles/bundle.css',
   './submission-received.html',
   './troop-roster_encrypted.html',
